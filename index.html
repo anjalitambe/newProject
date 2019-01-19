@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <link href="index.css" rel="stylesheet"/>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script src="JQUERY%20index.js"></script>
+        <title> Seguro</title>
+    </head>
+    <body>
+            
+        <a id ="left" href="home.jsp"><img id="imagelogo" src="smalllogo.png" /></a>
+            
+     
+
+        <div id="main">
+            <div id="slider">
+                <div id="d">
+                    P
+                </div>
+                <div class="line"></div>
+                <div id="data">
+                    CASE 1<br>
+                    <hr size="2" width="50px" color="#111" align="left"/>
+                    <div class="title">PAYS<br>FOR DAMAGE</div>
+                    <div class="info">Not only are cars expensive, paying for their repairs is costly, too. Sometimes, your car may be damaged due to someone else’s negligence. A car colliding with yours, or you swerving to avoid a jaywalker and crashing into a wall, or even a stray cricket ball cracking your windshield can set you back by a considerable amount of money. However, if you have car insurance, you need not pay for these repairs by yourself.
+                    </div>
+                </div>
+                
+                <div id="a">
+                    R
+                </div>
+                <div class="line"></div>
+                <div id="data2">
+                    CASE 2<br>
+                    <hr size="2" width="50px" color="#111" align="left"/>
+                    <div class="title">REDUCES<br>YOUR LIABILITY</div>
+                    <div class="info">Taking Third Party Liability (TPL) car insurance coverage is mandatory in India. The TPL policy covers you against the legal ramifications of an accident caused by you. For example, if you happen to cause an accident that results in damages to another person’s property or injuries to another driver/pedestrian, the insurance will pay for their treatment and save you from the legal repercussions of the case.
+                    </div>
+                </div>
+                
+                <div id="f">
+                    H
+                </div>
+                <div class="line"></div>
+                <div id="data3">
+                    CASE 3<br>
+                    <hr size="2" width="50px" color="#111" align="left"/>
+                    <div class="title">PAYS FOR <br>YOUR HOSPITALISATION</div>
+                    <div class="info">Not every car owner who suffers an accident is fortunate to get away with a few cuts and bruises. Some accidents result in fractures and other serious injuries that require hospitalisation. Instead of shelling out the high hospital and treatment costs from your own pocket, you can get your motor insurance to pay these expenses.</div>
+                </div>
+                
+                <div id="t">
+                    F
+                </div>
+                <div class="line"></div>
+                <div id="data4">
+                    CASE 4<br>
+                    <hr size="2" width="50px" color="#111" align="left"/>
+                    <div class="title">COMPENSATES<br>YOUR FAMILY</div>
+                    <div class="info">The most unfortunate outcome of a road accident is the car owner’s demise. Once the bread-earning policy holder has passed away, it might become difficult for his or her family to sustain its daily life. However, a motor insurance policy can help pay the family’s expenses after the unfortunate event.</div>
+                </div>
+            </div>
+        </div>
+        <div id="navigation">
+            <a  href="#" id="circle1"></a>
+            <a  href="#" id="circle2"></a>
+            <a  href="#" id="circle3"></a>
+            <a  href="#" id="circle4"></a>
+        </div>
+
+
+  
+
+
+    
+
+
+    </body>
+    <script type="text/javascript">
+        var l1=$("#d");
+        var l2=$("#a");
+        var l3=$("#f");
+        var l4=$("#t");
+        
+        var layer=$("#main");
+        
+        layer.mousemove(function(e){
+            var valueX=(e.pageX * -1 / 40) ;
+            
+            l1.css({'background-position':(valueX-200)+' '+0}); 
+            l2.css({'background-position':(valueX+380)+' '+0}); 
+            l3.css({'background-position':(valueX-350)+' '+0}); 
+            l4.css({'background-position':(valueX+350)+' '+0}); 
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>    
+</html>

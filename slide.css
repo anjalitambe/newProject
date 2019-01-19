@@ -1,0 +1,399 @@
+body{
+    margin: 0px;
+    padding: 0px;
+  background-image: url(BG.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+#MenuIcon{
+    height: 25px;
+    width: 50px;
+    position: fixed;
+    top:50;
+    right: 50;
+}
+#MenuIcon:hover{
+    cursor: pointer;
+}
+#MenuLine{
+    height: 4px;
+    width: 50px;
+    background-color: whitesmoke ;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .3s;
+}
+#MenuIcon:hover #MenuLine{
+    width: 40px;
+}
+#MenuLine::before{
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color: #3F0063;
+    position: absolute;
+    margin-top: 10px;
+    transition: all .3s;
+}
+#MenuIcon:hover #MenuLine::before{
+    width: 50px;
+}
+#MenuLine::after{
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:#3F0063;
+    position: absolute;
+    margin-top: -10px;
+    transition: all .3s;
+}
+#MenuIcon:hover #MenuLine::after{
+    width: 50px;
+}
+#MainMenu{
+    height: 100vh;
+    width: 300px;
+    background-color: #3F0063;
+    -webkit-clip-path:polygon(0 0,100% 0,0% 100%,0% 100%);
+    position: fixed;
+    top:0;
+    left: -300px;
+    transition: all .5s ease-in-out;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+    color:white;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+ul li{
+    margin: 20px;
+}
+ul li:hover{
+    cursor: pointer;
+}
+.line{
+    height: 2px;
+    width: 150px;
+    background-color: white;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all .3s;
+}
+ul li:hover .line{
+    width: 180px;
+}
+#logo{
+    position: absolute;
+    top:100;
+    left: 50%;
+    transform: translate(-50%);
+}
+#close{
+    position: absolute;
+    bottom: 150;
+    left: 50%;
+    transform: translate(-50%);
+}
+#close:hover{
+    cursor: pointer;
+}
+
+
+/* main css*/
+#mainlogo{
+    position: absolute;
+    top:20px;
+    left: 20px;
+}
+#mainul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top:100px;
+    left: 60px;
+}
+#mainul #mainli{
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+}
+#mainmsg{
+    font-family: fantasy;
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top:50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 10px 10px rgba(0,0,0,.1);
+    display: none;
+}
+#mainmsg2{
+    width: 300px;
+    font-family: fantasy;
+    font-size: 50px;
+    text-align: right;
+    color: white;
+    position: absolute;
+    top:65%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+#mainskate{
+    position: absolute;
+    top:20%;
+    left: 120%;
+}
+#main{
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top:80%;
+    left: 60%;
+    perspective: 800px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#mainbox{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #3F0063;
+    font-family: fantasy;
+    font-size: 32px;
+    color:#04C5D6;
+    text-align: center;
+    line-height: 70px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 15px 30px rgba(59,2,97,.4);
+    transition: all .5s;
+}
+#mainboxBottom{
+    width: 100%;
+    height: 30px;
+    background-color:turquoise;
+    position: absolute;
+    top:79%;
+    left: 0;
+    transform: rotateX(-87deg);
+    transition: all .5s;
+}
+#main:hover #mainbox{
+    color: #52Dee7;
+    background-color: #4A0472;
+    transform: rotateX(25deg);
+    text-shadow: 0 10px 10px rgba(0,0,0,.2);
+    box-shadow: 0 25px 30px rgba(59,2,97,.4);
+}
+#main:hover #mainboxBottom{
+    transform: rotateX(-70deg);
+}
+
+
+a {
+
+    text-decoration: none;
+    
+}
+
+#mainlink{
+
+    color: #52Dee7;
+}
+
+
+/* services */
+
+#topmain{
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top:20%;
+    left: 80%;
+    perspective: 800px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#topmainbox{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #3F0063;
+    font-family: fantasy;
+    font-size: 32px;
+    color:#04C5D6;
+    text-align: center;
+    line-height: 70px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 15px 30px rgba(59,2,97,.4);
+    transition: all .5s;
+}
+#topmainboxBottom{
+    width: 100%;
+     height: 30px;
+    background-color:turquoise;
+    position: absolute;
+    top:79%;
+    left: 0;
+    transform: rotateX(-87deg);
+    transition: all .5s;
+}
+#topmain:hover #topmainbox{
+    color: #52Dee7;
+    background-color: #3F0063;
+    transform: rotateX(25deg);
+    text-shadow: 0 10px 10px rgba(0,0,0,.2);
+    box-shadow: 0 25px 30px rgba(59,2,97,.4);
+}
+#topmain:hover #topmainboxBottom{
+    transform: rotateX(-70deg);
+}
+
+#topmainlink{
+
+    color: #52Dee7;
+}
+
+/*service*/
+
+.servicebox{
+    height: 420px;
+    width: 250px;
+    background-image: url(BG.jpg);  
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 99;
+}
+.servicepackage{
+    position: absolute;
+    top:12%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.servicesign{
+    position: absolute;
+    top:5px;
+    left: -5px;
+}
+.serviceprice{
+    font-family: fantasy;
+    font-size: 50px;
+    color:white;
+    position: relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.servicecategory{
+    font-family: monospace;
+    color:#f7d1c6;
+    position: absolute;
+    letter-spacing: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.serviceimgbox{
+    height: 100px;
+    width: 250px;
+    position: absolute;
+    top:120px;
+}
+.serviceimgbox img{
+    position: absolute;
+}
+.servicei1{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.servicei2{
+    left: 60%;
+    top:20%;
+    transform: translate(-50%,-50%);
+    opacity: .5;
+    transition: all .6s;
+}
+.servicei3{
+    left: 40%;
+    top:20%;
+    transform: translate(-50%,-50%);
+    opacity: .5;
+    transition: all .6s;
+}
+.servicebox:hover .servicei2{
+    left: 70%;
+}
+.servicebox:hover .servicei3{
+    left: 30%;
+}
+.servicecontent{
+    height: 58%;
+    width: 250px;
+    background-color:white;
+    position: absolute;
+    top:180px;
+}
+.serviceinfo{
+    width: 180px;
+    font-family: 'Times New Roman', Times, serif;   
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: midnightblue;
+}
+.servicebtn{
+    height: 40px;
+    width: 200px;
+    background-color:#3F0063;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 40px;
+    color:white;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s;
+}
+.servicebtn:hover{
+    cursor: pointer;
+    background-color:#3F0063;
+}
+#servicebox2{
+    height: 400px;
+    left: 33%;
+    z-index: 9;
+}
+#servicebox3{
+    height: 400px;
+    left: 67%;
+    z-index: 9;
+}
+
+

@@ -1,0 +1,238 @@
+
+img{
+
+    margin-left: 92%;
+    margin-top: 40px;
+}
+
+body{
+    background-color: #3F0063;
+    margin: 0px;
+    padding: 0px;
+}
+#main1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(one.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 14%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#main2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(two.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 28%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#main3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(three.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 42%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#main4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(four.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 56%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#main5{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(five.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#main6{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(six.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 84%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+h1{
+    
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align :center;
+}
+#border{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px dashed turquoise;
+    border-radius: 50%;
+    transform: scale(1.1);
+    transition: all 5s;
+}
+#main1:hover #border,#main2:hover #border,#main3:hover #border,#main4:hover #border,#main5:hover #border,#main6:hover #border{
+    animation: borderRotate 3s infinite linear;
+}
+
+@-webkit-keyframes borderRotate{
+    from{
+        transform: rotate(0deg) scale(1.1);
+    }
+    to{
+        transform: rotate(360deg) scale(1.1);
+    }
+}
+#tooltip{
+    display: inline-block;
+    height: 220px;
+    width: 170px;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 5px silver;
+    position: absolute;
+    top:100%;
+    left: 50%;
+    transform: translate(-50%,10%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+#tooltip:before{
+    content: '\25b2';
+    font-size: 20px;
+    color:whitesmoke;
+    position: absolute;
+    top:-17px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#main1:hover #tooltip,#main2:hover #tooltip,#main3:hover #tooltip,#main4:hover #tooltip,#main5:hover #tooltip,#main6:hover #tooltip{
+    transform: translate(-50%,0%);
+    opacity: 1;
+    visibility: visible;
+}
+#bigcircle1{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(one.png);
+    background-size: 120%;
+    background-position: center;
+    margin: 25px 45px;
+}
+#bigcircle2{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(two.png);
+    background-size: 120%;
+    background-position: center;
+    margin: 25px 45px;
+}
+#bigcircle3{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(three.png);
+    background-size: 120%;
+    background-position: center;
+    margin: 25px 45px;
+}
+#bigcircle4{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(four.png);
+    background-size: 120%;
+    background-position: center;
+    margin: 25px 45px;
+}
+#bigcircle5{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(five.png);
+    background-size: 120%;
+    background-position: center;
+    margin: 25px 45px;
+}
+#bigcircle6{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(six.png);
+    background-size: 120%;
+    background-position: center;
+    margin: 25px 45px;
+}
+h3{
+    font-family: arial;
+    font-size: 14px;
+    color:gray;
+    text-align: center;
+    margin: 0px;
+}
+h5{
+    font-family: arial;
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+    margin: 10px;
+}
+
+#heart{
+    display: inline-block;
+    font-size: 20px;
+    color:tomato;
+    margin: 0px 5px 0px 60px;
+}
+#rate{
+    display: inline-block;
+    font-family: arial;
+    font-size: 13px;
+    color:gray;
+}
+
+
